@@ -93,7 +93,6 @@ class EmployeesTable extends Table
         $validator
             ->scalar('address')
             ->requirePresence('address', 'create')
-            ->alphaNumeric('address')
             ->notEmpty('address');
 
         $validator
